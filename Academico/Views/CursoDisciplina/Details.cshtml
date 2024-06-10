@@ -1,0 +1,36 @@
+﻿@model Academico.Models.CursoDisciplina
+
+@{
+    ViewData["Title"] = "Details CursoDisciplina";
+}
+
+<h1>Details CursoDisciplina</h1>
+
+<div>
+    <h4>CursoDisciplina</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Curso.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Curso.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Disciplina.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Disciplina.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CargaHoraria)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CargaHoraria)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

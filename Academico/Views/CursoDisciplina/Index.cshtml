@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Academico.Models.CursoDisciplina>
+
+@{
+    ViewData["Title"] = "CursoDisciplina Index";
+}
+
+<h1>CursoDisciplina</h1>
+
+<p>
+    <a asp-action="Create">Create New or Update</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Curso.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disciplina.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CargaHoraria)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Curso.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disciplina.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CargaHoraria)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.DisciplinaId">Details</a> |
+                    <a asp-action="Delete" asp-route-disciplinaId="@item.DisciplinaId" asp-route-cursoId="@item.CursoId">Excluir</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
