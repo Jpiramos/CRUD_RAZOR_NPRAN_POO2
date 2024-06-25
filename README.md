@@ -50,4 +50,4 @@ Pressione F5 ou clique em Executar no Visual Studio para iniciar o projeto.
 ______________________________________________________________________________________________________________________
 Este projeto é licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-*Desenvolvido por João Pedro Ramos*
+*Desenvolvido por [João Pedro Ramos](https://github.com/Jpiramos)*
