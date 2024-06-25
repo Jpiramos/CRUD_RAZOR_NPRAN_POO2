@@ -1,4 +1,4 @@
-# Projeto CRUD em Blazor - Relacionamento Muitos-para-Muitos
+# Projeto CRUD em Razor - Relacionamento Muitos-para-Muitos
 
 Este projeto foi desenvolvido como parte da disciplina de Programação Orientada a Objetos II da faculdade. Ele implementa um sistema CRUD utilizando Razor para gerenciar instituições, seus departamentos, cursos e disciplinas explorando o relacionamento muitos-para-muitos (Curso-Disciplina).
 
